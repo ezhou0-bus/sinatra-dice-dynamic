@@ -1,10 +1,9 @@
-<h1><%= "#{@RANDOM_DICE}d#{@RANDOM_SIDES}" %></h1>
-<ul>
+<h1><%= @num_dice %>d<%= @sides %></h1>
 
- random_dice = rand(2..100)
-    random_sides = rand(2..100)
-    
+<ul>
   <% @rolls.each do |a_roll| %>
-    <li><%= a_roll %></li>
+    <li>
+      <%= a_roll %>
+    </li>
   <% end %>
 </ul>
